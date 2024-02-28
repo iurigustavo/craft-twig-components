@@ -1,0 +1,45 @@
+{
+  "name": "havit/craft-twig-components",
+  "description": "Twig components extension",
+  "keywords": [
+    "craftcms",
+    "twig-components",
+    "plugins"
+  ],
+  "homepage": "https://github.com/iurigustavo/twig-components",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Iúri Gustavo",
+      "email": "gustavo.iuri@gmail.com",
+      "homepage": "https://github.com/iurigustavo",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "twig/twig": "^2.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.0",
+    "symfony/var-dumper": "^3.2",
+    "vimeo/psalm": "^3.11"
+  },
+  "autoload": {
+    "psr-4": {
+      "Havit\\TwigComponents\\": "src"
+    }
+  },
+  "scripts": {
+    "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true,
+      "pestphp/pest-plugin": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
